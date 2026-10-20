@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "dsh-model-selecter",
+    "description": "A provider-first model selector: the root menu shows only the current provider's models, and “More models…” opens the provider list before the model list."
+  }
+}

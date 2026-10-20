@@ -1,0 +1,55 @@
+{
+  "name": "dsh-model-selecter",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Provider-first model selector for the DSH Web composer: the menu lists the current provider's models first, then the providers, then their models. / 按服务商分组的 DSH 模型选择器。",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "docs/*.png",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-model-selection",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "model-selector",
+    "provider",
+    "composer"
+  ],
+  "author": "Abyssaler",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abyssaler/dsh-model-selecter.git"
+  },
+  "homepage": "https://github.com/Abyssaler/dsh-model-selecter#readme",
+  "bugs": {
+    "url": "https://github.com/Abyssaler/dsh-model-selecter/issues"
+  }
+}

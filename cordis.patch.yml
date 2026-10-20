@@ -1,0 +1,5 @@
+# Model Selecter bundle layer: insert the plugin row. The Client half is
+# discovered from package.json's dsh.client declaration.
+- insert:
+    - id: dsh-model-selecter
+      name: dsh-model-selecter
